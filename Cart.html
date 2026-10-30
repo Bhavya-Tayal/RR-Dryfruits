@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <title>RR Dryfruits - Cart</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="logo.png" alt="RR Dryfruits Logo"></a>
+           
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav-items-2">
+                <li><a href="cart-hi.html"><i class="fa-solid fa-language"></i></a></li>
+                <li><a href="Cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="Login.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-page-container">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-layout">
+                <div class="cart-items-section" id="cart-items-container">
+                </div>
+                <div class="cart-summary-section">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 15px; color: #5C4636;">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">₹0</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 15px; color: #5C4636;">
+                        <span>Delivery Charges:</span>
+                        <span id="cart-delivery">₹0</span>
+                    </div>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #ddd;">
+                        <p style="display: flex; justify-content: space-between; font-size: 18px; font-weight: bold; margin: 15px 0;">
+                            <span>Total Amount:</span> 
+                            <span id="cart-total-price" style="color: #6F8A3C;">₹0</span>
+                        </p>
+                    <a href="Contact-Us.html" class="home-btn" style="display: block; text-align: center; padding: 12px; background: #E0A23B; color: #2B1710; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;">Proceed to Order</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="product.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="About-Us.png" alt="Ramchand Radhakishan shop storefront">
+                <h3>Ramchand Radhakishan</h3>
+                <p>Pure, organic dry fruits and nuts from the heart of Naya Bazaar, Ajmer.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Review.html">Reviews</a></li>
+                    <li><a href="About-Us.html">About Us</a></li>
+                    <li><a href="Contact-Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Details</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+919999999999">+91 9999999999</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+919999999999">+91 9999999999</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:bhavyatayal234@gmail.com">Bhavyatayal234@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Visit Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Naya Bazaar, Ajmer, Rajasthan 305001</li>
+                    <li><i class="fa-solid fa-clock"></i>Whole week, 10:00 AM - 8:30 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Ramchand Radhakishan. All rights reserved.</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - RR Dryfruits</title>
+    <style>
+        body {
+            background-color: #F2D8C1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 8px 12px 25px rgba(132, 85, 54, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        .login-card h2 {
+            color: #170804;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            color: #170804;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .input-group input {
+            padding: 12px 15px;
+            border: 1.5px solid #dddddd;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .input-group input:focus {
+            border-color: #845536;
+        }
+        .login-btn {
+            background-color: #845536;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .login-btn:hover {
+            background-color: #170804;
+            transform: translateY(-3px);
+        }
+        .login-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 14px;
+        }
+        .login-links a {
+            color: #845536;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .login-links a:hover {
+            color: #170804;
+        }
+        .back-home {
+            margin-top: 30px;
+            color: #555555;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        .back-home i {
+            margin-right: 5px;
+        }
+        .back-home:hover {
+            color: #170804;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <img src="favicon.png" alt="RR Logo">
+        <h2>Welcome Back</h2>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <div class="login-links">
+            <a href="ForgotPassword.html">Forgot Password?</a>
+            <a href="Create.html">Create Account</a>
+        </div>
+        <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Return to Store</a>
+    </div>
+</body>
+</html>
